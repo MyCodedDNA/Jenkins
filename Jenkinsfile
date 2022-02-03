@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn install'
+                bat 'mvn package -Dartifactversion=' + '_my_version1'
             }
         }
     }

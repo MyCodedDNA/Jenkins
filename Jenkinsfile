@@ -5,6 +5,10 @@ pipeline
     {
         maven  '3.8.4'
     }
+    environment 
+    {
+        JAVA_HOME = 'C:/Program Files/Java/jdk1.8.0_321'
+    }
     stages 
     {
         stage('Build') 

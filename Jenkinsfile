@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn package -Dartifactversion=' + '_my_version1'
+                bat 'mvn versions:set -DnewVersion=2.50.1-SNAPSHOT'
             }
         }
     }

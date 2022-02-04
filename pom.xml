@@ -70,7 +70,7 @@
               </goals>
               <phase>validate</phase>
               <configuration>
-                <newVersion>${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion}.0</newVersion>
+                <newVersion>${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion}.${parsedVersion.incrementalVersion}</newVersion>
               </configuration>
             </execution>
           </executions>
@@ -98,7 +98,7 @@
               </goals>
               <phase>validate</phase>
               <configuration>
-                <newVersion>${parsedVersion.nextMajorVersion}.0.0</newVersion>
+                <newVersion>${parsedVersion.nextMajorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</newVersion>
               </configuration>
             </execution>
           </executions>

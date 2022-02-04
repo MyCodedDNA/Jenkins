@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn versions:set -DnewVersion=2.50.1-SNAPSHOT'
+                bat 'mvn build-helper:parse-version help:effective-pom'
             }
         }
     }

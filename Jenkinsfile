@@ -32,6 +32,7 @@ pipeline
             bat '''   
             git config --global user.email "aman06031999@gmail.com"
             git config --global user.name "Aman Gupta"
+            git fetch origin
             git remote set-url --push origin 'https://github.com/MyCodedDNA/Jenkins.git'
             
             git add .

@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn validate -DbumpPatch'
+                bat 'mvn build-helper:parse-version help:effective-pom'
             }
         }
     }

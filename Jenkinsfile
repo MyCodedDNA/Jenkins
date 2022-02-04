@@ -30,7 +30,7 @@ pipeline
         always {
             
                 
-           git remote set-url --push origin https://github.com/MyCodedDNA/Jenkins.git
+           git remote set-url --push origin 'https://github.com/MyCodedDNA/Jenkins.git'
             git add .
             git commit -m "changes"
            git push origin main

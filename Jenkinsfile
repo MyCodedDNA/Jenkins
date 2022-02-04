@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn build-helper:parse-version help:effective-pom'
+                bat 'mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion} versions:commit'
             }
         }
     }

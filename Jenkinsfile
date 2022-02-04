@@ -22,7 +22,7 @@ pipeline
         {
             steps
             {
-                bat 'mvn clean install -PbumpPatch'
+                bat 'mvn clean install -Pbump-patch'
             }
         }
     }
